@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gustavo Brito — Desenvolvedor Web</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, sans-serif;
+    background: #0A0A0A;
+    color: #FFF;
+    line-height: 1.6;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+  
+  header {
+    padding: 100px 0 60px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+  }
+  header h1 span { color: #00FF88; }
+  header p {
+    font-size: 20px;
+    color: #999;
+    max-width: 600px;
+    margin: 0 auto 32px;
+  }
+  .cta {
+    display: inline-block;
+    background: #00FF88;
+    color: #000;
+    padding: 16px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+    transition: transform 0.2s;
+  }
+  .cta:hover { transform: translateY(-2px); }
+
+  section { padding: 60px 0; }
+  h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 32px;
+  }
+  h2 span { color: #00FF88; }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+  }
+  .project {
+    background: #151515;
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 28px;
+    transition: all 0.3s;
+  }
+  .project:hover {
+    border-color: #00FF88;
+    transform: translateY(-4px);
+  }
+  .project h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .project p {
+    color: #888;
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  .project a {
+    color: #00FF88;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .skill {
+    background: #151515;
+    border: 1px solid #222;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #CCC;
+  }
+
+  .contact {
+    text-align: center;
+    padding: 80px 0;
+    background: #0F0F0F;
+    border-radius: 16px;
+    margin: 40px 0;
+  }
+  .contact h2 { margin-bottom: 16px; }
+  .contact p {
+    color: #999;
+    margin-bottom: 32px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #555;
+    font-size: 14px;
+    border-top: 1px solid #1A1A1A;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 600px) {
+    header h1 { font-size: 32px; }
+    header p { font-size: 17px; }
+    h2 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Olá, sou <span>Seu Nome</span></h1>
+    <p>Desenvolvedor web iniciante. Crio sites rápidos, responsivos e personalizados para pequenos negócios.</p>
+    <a href="#contato" class="cta">Quero um orçamento →</a>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h2>Meus <span>projetos</span></h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Projeto 1</h3>
+        <p>Descrição curta do que você fez e para quem.</p>
+        <a href="#">Ver projeto →</a>
+      </div>
+      <div class="project">
+        <h3>Projeto 2</h3>
+        <p>Descrição curta do que você fez e para quem.</p>
+        <a href="#">Ver projeto →</a>
+      </div>
+      <div class="project">
+        <h3>Projeto 3</h3>
+        <p>Descrição curta do que você fez e para quem.</p>
+        <a href="#">Ver projeto →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Habilidades</h2>
+    <div class="skills">
+      <span class="skill">HTML5</span>
+      <span class="skill">CSS3</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">Python</span>
+      <span class="skill">C++ (aprendendo)</span>
+      <span class="skill">Git & GitHub</span>
+      <span class="skill">Responsividade</span>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="container">
+    <div class="contact">
+      <h2>Vamos <span>trabalhar juntos?</span></h2>
+      <p>Estou disponível para criar o site do seu negócio. Orçamento sem compromisso.</p>
+      <a href="https://wa.me/5551990171755" class="cta">Chamar no WhatsApp →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Gustavo Brito. Feito do zero com HTML e CSS.</p>
+  </div>
+</footer>
+
+</body>
+</html>
